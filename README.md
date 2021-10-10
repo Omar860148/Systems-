@@ -1,1 +1,1 @@
-# Systems-
+# Food Ordering System using PHP and MySQL project is developed by Omar Mohamed for the benefit of the system to emulate the online food ordering systems. This Web Application is a simple implementation offering interface for customers and Administrators.
