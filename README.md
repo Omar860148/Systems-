@@ -21,3 +21,10 @@
 # .Deletion of existing Food Category
 # .Deletion of a Food Item
 # .Modifying Name and Price of an existing Food Item
+
+# Platform Requirements
+# PHP
+# MySQL
+# HTML
+# AJAX
+# Bootstrap CSS styles
