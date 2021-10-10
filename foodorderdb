@@ -1,0 +1,58 @@
+Database: `foodorderdb`
+--
+-- --------------------------------------------------------
+--
+-- Table structure for table `menucategory_tbl`
+--
+CREATE TABLE `menucategory_tbl` (
+  `Category` int(11) NOT NULL,
+  `CatDesc` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+-- --------------------------------------------------------
+--
+-- Table structure for table `menuitems_tbl`
+--
+CREATE TABLE `menuitems_tbl` (
+  `Category` int(11) NOT NULL,
+  `MenuItemID` int(11) NOT NULL,
+  `ItemName` varchar(30) NOT NULL,
+  `Price` int(11) NOT NULL,
+  `Discount` int(11) NOT NULL,
+  `ItemImg` tinyblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+-- --------------------------------------------------------
+--
+-- Table structure for table `orderdetails_tbl`
+--
+CREATE TABLE `orderdetails_tbl` (
+  `OrderID` int(11) NOT NULL,
+  `ItemID` int(11) NOT NULL,
+  `Quantity` int(11) NOT NULL,
+  `Amount` float NOT NULL,
+  `Discount` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+-- --------------------------------------------------------
+--
+-- Table structure for table `orders_tbl`
+--
+CREATE TABLE `orders_tbl` (
+  `OrderID` int(11) NOT NULL,
+  `OrderDate` date NOT NULL,
+  `UserName` varchar(40) NOT NULL,
+  `AmtPaid` float NOT NULL,
+  `TotDiscount` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+-- --------------------------------------------------------
+--
+-- Table structure for table `users_tbl`
+--
+CREATE TABLE `users_tbl` (
+  `UserName` varchar(60) NOT NULL,
+  `Password` varchar(30) NOT NULL,
+  `UserType` varchar(20) NOT NULL,
+  `ContactNo` varchar(15) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `DelAddress` varchar(100) NOT NULL,
+  `City` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+COMMIT;
