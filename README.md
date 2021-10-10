@@ -7,4 +7,4 @@
 
 # Admin dashboard 
 
-# When an admin logs on with her credentials, she is presented with dashboard to create new food categories and food items. A food Item can only be added against a food category.  The administrator also has to save the category and food item images in the image folder. These are displayed along with the category or food item.
+# When an admin logs in with his/her credentials, she/he is presented with dashboard to create new food categories and food items. A food Item can only be added against a food category.  The administrator also has to save the category and food item images in the image folder. These are displayed along with the category or food item.
